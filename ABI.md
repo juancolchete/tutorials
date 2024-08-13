@@ -29,6 +29,7 @@ Is a standard way to interact with contracts via RPC calls or contract interacti
     ],
     "outputs": [],
     "name": "",
+    "stateMutability": "",
     "type": ""
     }
   ]
