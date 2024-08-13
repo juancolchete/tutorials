@@ -53,51 +53,51 @@ Is a standard way to interact with contracts via RPC calls or contract interacti
 ### Function
 ```json
 {
-      "inputs": [
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "userId",
+      "type": "uint256"
+    }
+  ],
+  "name": "getUser",
+  "outputs": [
+    {
+      "components": [
         {
           "internalType": "uint256",
-          "name": "userId",
+          "name": "createdAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "name",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "level",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "level",
           "type": "uint256"
         }
       ],
-      "name": "getUser",
-      "outputs": [
-        {
-          "components": [
-            {
-              "internalType": "uint256",
-              "name": "createdAt",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "name",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "level",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "level",
-              "type": "uint256"
-            }
-          ],
-          "internalType": "struct BattleRoyal.user",
-          "name": "",
-          "type": "tuple"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+      "internalType": "struct BattleRoyal.user",
+      "name": "",
+      "type": "tuple"
     }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+}
 ```
 ### Event
 ```json
