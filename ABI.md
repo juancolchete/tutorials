@@ -1,5 +1,5 @@
 # Application Binary Interface
-Is a standard way to interact with contracts via RPC calls or contract interaction.]
+Is a standard way to interact with contracts via RPC calls or contract interaction.
 ## Base structure
 ```json
 {
