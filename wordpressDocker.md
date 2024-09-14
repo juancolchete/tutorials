@@ -22,6 +22,9 @@ CREATE USER 'wordpress'@'%' IDENTIFIED BY '123456!@Change';
 GRANT ALL PRIVILEGES ON *.* TO 'wordpress'@'%' WITH GRANT OPTION;
 ```
 ```bash
+exit
+```
+```bash
 docker run --name wpLocal -p 8080:80 -d wordpress
 ```
 ```bash
