@@ -1,9 +1,9 @@
 # Wordpress on Docker
 ```bash
-docker run --name wpDB -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456!@change --network wp -d mysql:latest
+docker run --name wpDB -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456!@change -d mysql:latest
 ```
 ```bash
-docker run --name wpLocal -p 8080:80 --network wp -d wordpress
+docker run --name wpLocal -p 8080:80 -d wordpress
 ```
 ```bash
 pacman -S jq
