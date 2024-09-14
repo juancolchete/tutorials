@@ -13,10 +13,13 @@ sudo apt install mysql
 mysql -u root -h 127.0.0.1 -p
 ```
 ```bash
+CREATE DATABASE wordpress;
+```
+```bash
 CREATE USER 'wordpress'@'%' IDENTIFIED BY '123456!@Change';
 ```
 ```bash
-GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'wordpress'@'%' WITH GRANT OPTION;
 ```
 ```bash
 docker run --name wpLocal -p 8080:80 -d wordpress
