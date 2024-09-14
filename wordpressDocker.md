@@ -3,7 +3,7 @@
 docker run --name wpDB -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456!@Change -d mysql:latest
 ```
 ```bash
-pacman -S mysql
+sudo pacman -S mysql
 ```
 or
 ```bash
@@ -22,16 +22,16 @@ CREATE USER 'wordpress'@'%' IDENTIFIED BY '123456!@Change';
 GRANT ALL PRIVILEGES ON *.* TO 'wordpress'@'%' WITH GRANT OPTION;
 ```
 ```bash
+FLUSH PRIVILEGES;
+```
+```bash
 exit
 ```
 ```bash
 docker run --name wpLocal -p 8080:80 -d wordpress
 ```
 ```bash
-FLUSH PRIVILEGES;
-```
-```bash
-pacman -S jq
+sudo pacman -S jq
 ```
 or
 ```bash
