@@ -3,6 +3,13 @@
 docker run --name wpDB -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456!@Change -d mysql:latest
 ```
 ```bash
+pacman -S mysql
+```
+or
+```bash
+sudo apt install mysql
+```
+```bash
 mysql -u root -h 127.0.0.1 -p
 ```
 ```bash
