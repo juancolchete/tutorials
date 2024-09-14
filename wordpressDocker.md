@@ -15,6 +15,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
 docker run --name wpLocal -p 8080:80 -d wordpress
 ```
 ```bash
+FLUSH PRIVILEGES;
+```
+```bash
 pacman -S jq
 ```
 or
